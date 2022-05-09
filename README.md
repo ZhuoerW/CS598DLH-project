@@ -27,7 +27,11 @@ The existing DRKG embedding
 > 
 > data/DRKG/embed/relations.tsv
 
-The code for preprocessing has a wget that downlods the DRKG. Since we already provide the required data here, there is no need to download the package while running the code. 
+For the DRKG embedding, you should first download drkg.tar.gz with 
+> wget https://dgl-data.s3-us-west-2.amazonaws.com/dataset/DRKG/drkg.tar.gz.
+
+Then move the drkg.tar.gz under the ./data/DRKG and unzip it with  
+> tar -czvf drkg.tar.gz
 
 # Reproducing Pipeline
 ## Data preprocessing
